@@ -22,7 +22,7 @@
         <version.jaxb>2.2.11</version.jaxb>
         <version.log4j>2.1</version.log4j>
         <version.jackson>1.9.13</version.jackson>
-        <version.glassfish>4.0</version.glassfish>
+        <version.glassfish>4.1</version.glassfish>
         <version.gson>2.3.1</version.gson>
         <version.json>1.0.4</version.json>
         <!-- db -->
@@ -110,7 +110,12 @@
                 <groupId>org.glassfish.main.extras</groupId>
                 <artifactId>glassfish-embedded-all</artifactId>
                 <version>${version.glassfish}</version>
-                <scope>provided</scope>
+                <type>jar</type>
+            </dependency>
+            <dependency>
+                <groupId>org.glassfish.main.extras</groupId>
+                <artifactId>glassfish-embedded-web</artifactId>
+                <version>${version.glassfish}</version>
             </dependency>
             <dependency>
                 <groupId>org.glassfish.main</groupId>
@@ -282,5 +287,6 @@
     <module>doit-interfaces</module>
     <module>doit-utility</module>
     <module>doit-dto</module>
+    <module>doit-emb</module>
   </modules>
 </project>
