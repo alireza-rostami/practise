@@ -1,0 +1,7 @@
+/doit-ejb/target/
+/doit-web/target/
+/doit-ear/target/
+/doit-persistence/target/
+/doit-interfaces/target/
+/doit-utility/target/
+/doit-dto/target/
